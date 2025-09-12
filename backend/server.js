@@ -12,6 +12,9 @@ const allowedOrigin = process.env.CORS_ORIGIN || '*';
 app.use(cors({ origin: allowedOrigin }));
 app.use(express.json());
 
+// Serve static files from frontend directory
+app.use(express.static('../frontend'));
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ ok: true, uptime: process.uptime() });

@@ -1,23 +1,15 @@
 {
-  "name": "personal-portfolio-final-master",
+  "name": "portfolio-project",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "Personal Portfolio with Backend API",
+  "main": "backend/server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cd backend && npm run dev",
+    "start": "cd backend && npm start",
+    "install-all": "npm install && cd backend && npm install",
+    "build": "echo 'No build step required for this project'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "nodemailer": "^7.0.6"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+  "keywords": ["portfolio", "express", "nodejs"],
+  "author": "Edwin Njoroge",
+  "license": "ISC"
 }
