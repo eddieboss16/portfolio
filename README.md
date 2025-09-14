@@ -28,16 +28,7 @@ portfolio/
 ## Environment Configuration
 The backend uses a `.env` file located in the `backend/` directory:
 
-```env
-PORT=3000
-CORS_ORIGIN=http://localhost:3000
-SMTP_HOST=
-SMTP_PORT=587
-SMTP_SECURE=false
-SMTP_USER=
-SMTP_PASS=
-MAIL_FROM=
-MAIL_TO=
+```env classified
 ```
 
 ## Getting Started
